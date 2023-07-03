@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "noLib": false,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+  },
+  "types": [
+    "bluebird-global"
+  ],
+  "include": [
+    "src/**/*",
+    "lib/**/*",
+    "ormconfig.json",
+    "config.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "src/tests/**/*.ts",
+  ],
+  "tslint.autoFixOnSave": true,
+}
