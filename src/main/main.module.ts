@@ -5,7 +5,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { NetworkModule } from './network/network.module';
 import {ConfigModule} from "@nestjs/config";
 import { HealthCheckModule} from "./health/health-check.module";
-import {EventsModule} from "./events/events.module";
+import {EventsModule} from "./defencemate/events.module";
 // import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({

@@ -16,26 +16,7 @@ export class AuthenticationHelper{
         if(verificationType != VERIFICATION_TYPE.NATIVE){
             msg = `I am signing my one-time nonce: ${msg}`;
         }
-        
-        // console.log(msg);
-        // console.log(signature);
-        // console.log(publicAddress);
-        // msg = msg.tohex();
-        // const msgBuffer = ethUtil.toBuffer(msg);
 
-        // const msgHash = ethUtil.hashPersonalMessage(msgBuffer);
-
-        // const signatureBuffer = ethUtil.toBuffer(signature);
-        // const signatureParams = ethUtil.fromRpcSig(signatureBuffer);
-
-        // const publicKey = ethUtil.ecrecover(
-        // msgHash,
-        // signatureParams.v,
-        // signatureParams.r,
-        // signatureParams.s
-        // );
-        // const addressBuffer = ethUtil.publicToAddress(publicKey);
-        // const address = ethUtil.bufferToHex(addressBuffer);
 
         const msgBufferHex = bufferToHex(Buffer.from(msg, 'utf8'));
         const address = recoverPersonalSignature({

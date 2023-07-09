@@ -10,7 +10,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['events-module'],
+  app_name: ['defencemate-module'],
   /**
    * Your New Relic license key.
    */
