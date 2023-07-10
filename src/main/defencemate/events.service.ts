@@ -19,7 +19,7 @@ export class EventsService {
 
     async submitFormTalkToUs(params: SubmitFormTalkToUsDto, options ?: OptionsType<{ domainUrl: string; }>) {
         let discordWebhookUrl: string = "https://discord.com/api/webhooks/1127540577005731910/n2D1TwufuvzXxL7QrGWZsqPqCXVCH2WSjxuDka05KTzGgj3JSBFwjtwQWW-CFEa5nMm8";
-        let message:string = `${params.firstName} ${params.lastName} ||| ${params.phoneNumber} ||| ${params.company} ||| ${params.message}   /n `
+        let message:string = `${params.fullName} ||| ${params.phoneNumber} ||| ${params.company} ||| ${params.message}   /n `
         let body: any = {content: JSON.stringify(message)}
         let headers: any = {"Content-Type": "application/json"}
         let res: any = await this.NetworkService.post(discordWebhookUrl, body, {headers});

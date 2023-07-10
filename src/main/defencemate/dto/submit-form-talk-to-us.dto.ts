@@ -4,11 +4,7 @@ import { IsArray, IsDateString, IsDefined, IsOptional, IsString, ValidateNested 
 export class SubmitFormTalkToUsDto{
     @IsDefined()
     @IsString()
-    firstName : string;
-
-    @IsDefined()
-    @IsString()
-    lastName : string;
+    fullName : string;
 
     @IsDefined()
     @IsString()
